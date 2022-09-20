@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+* {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* AntD Override */
 input {
   border-radius: 0.3rem !important;
@@ -19,6 +29,7 @@ label {
 .card-title {
   font-size: 1.5rem;
   font-weight: bold;
+  font-family: "Play", sans-serif;
 }
 
 .normal-text {
@@ -31,23 +42,235 @@ label {
 }
 
 .primary-button {
-  background-color: rgb(230, 0, 176) !important;
-  border-color: blue !important;
+  background-color: #87a2fb !important;
+  border-color: rgb(232, 224, 213) !important;
   height: 2.5rem !important;
   width: 100% !important;
   color: white !important;
   font-size: 1rem;
+  margin-bottom: 1.3rem !important;
+}
+
+.anchor {
+  color: #87a2fb;
+  font-size: 0.9rem;
+  background-color: antiquewhite;
+  border-radius: 0.7rem;
+  padding: 0.3rem;
+}
+
+.anchor:hover {
+  text-decoration: underline;
 }
 
 /* Authentication pages */
 
+.auth-wrapper {
+  width: 37.5rem;
+  height: 37.5rem;
+}
+
 .authentication {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: translateY(4.8rem);
+}
+
+.authentication.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(7rem);
 }
 
 .authentication-form {
-  width: 400px;
+  width: 25rem;
+}
+
+.section-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: pink;
+  color: white;
+  max-width: max-content;
+  padding: 0.7rem 0.9rem;
+  margin-left: -2.5rem;
+  border-bottom-left-radius: 0.6rem;
+}
+
+.circle-logo {
+  background-image: url("../public/images/doc-spot-circle.png");
+  background-repeat: no-repeat;
+  width: 37.5rem;
+  height: 37.5rem;
+  position: absolute;
+}
+
+.logo-200 {
+  background-image: url("../public/images/logo_100.png");
+  background-repeat: no-repeat;
+  width: 6.3rem;
+  height: 6.3rem;
+  position: absolute;
+  top: 1rem;
+}
+
+/*Responsiveness*/
+/*Login and Register*/
+@media (max-width: 1440px) {
+  .circle-logo {
+    background-image: url("../public/images/doc-spot-circle_500.png");
+    height: 32rem;
+    width: 32rem;
+  }
+
+  .authentication.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transform: translateY(4rem);
+    left: 3.2rem;
+  }
+
+}
+
+@media (max-width: 425px) {
+  .circle-logo {
+    visibility: hidden;
+  }
+
+  .logo-200 {
+    position: absolute;
+    top: 1rem;
+    left: 11rem;
+  }
+
+  .authentication {
+    width: 80vw;
+    margin-left: 4rem;
+  }
+
+  .authentication.login {
+    width: 80vw;
+    margin-left: 4rem;
+    visibility: visible;
+  }
+
+  .anchor{
+    margin-left: 4.3rem;
+  }
+
+  .anchor.login{
+    margin-left: 3.5rem;
+  }
+
+  .primary-button {
+    margin-bottom: 2rem !important;
+  }
+
+  .logo-200.login {
+    background-repeat: no-repeat;
+    width: 6.3rem;
+    height: 6.3rem;
+    position: absolute;
+    top: 1rem;
+    left: 12rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .circle-logo {
+    visibility: hidden;
+  }
+
+  .authentication {
+    width: 80vw;
+    margin-left: 4rem;
+  }
+
+  .authentication.login {
+    width: 80vw;
+    margin-left: 5rem;
+  }
+
+  .anchor {
+    margin-left: 3.2rem;
+  }
+
+  .anchor.login {
+    margin-left: 2.5rem;
+  }
+
+  .primary-button {
+    margin-bottom: 2rem !important;
+  }
+
+  .logo-200.login {
+    background-repeat: no-repeat;
+    width: 6.3rem;
+    height: 6.3rem;
+    position: absolute;
+    top: 1rem;
+    left: 10.3rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .card-title {
+    font-size: 1.4rem;
+  }
+ 
+  .circle-logo {
+    visibility: hidden;
+  }
+
+  .authentication {
+    width: 80vw;
+    margin-left: 6rem;
+  }
+
+  .authentication.login {
+    width: 80vw;
+    margin-left: 8rem;
+  }
+
+  .anchor {
+    margin-left: 1.9rem;
+  }
+
+  .anchor.login {
+    margin-left: 1.2rem;
+  }
+
+  .primary-button {
+    margin-bottom: 2rem !important;
+  }
+
+  .logo-200 {
+    background-repeat: no-repeat;
+    width: 6.3rem;
+    height: 6.3rem;
+    position: absolute;
+    top: 1rem;
+    left: 9.5rem;
+  }
+
+  .logo-200.login {
+    background-repeat: no-repeat;
+    width: 6.3rem;
+    height: 6.3rem;
+    position: absolute;
+    top: 1rem;
+    left: 9.5rem;
+  }
 }
