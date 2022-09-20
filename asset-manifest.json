@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/doc-spot/static/css/main.f898e69b.css",
+    "main.js": "/doc-spot/static/js/main.2f8be981.js",
+    "static/media/doc-spot-circle.png": "/doc-spot/static/media/doc-spot-circle.c47c8b7dee2f7f4ce61d.png",
+    "index.html": "/doc-spot/index.html",
+    "main.f898e69b.css.map": "/doc-spot/static/css/main.f898e69b.css.map",
+    "main.2f8be981.js.map": "/doc-spot/static/js/main.2f8be981.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f898e69b.css",
+    "static/js/main.2f8be981.js"
+  ]
+}
